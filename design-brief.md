@@ -1,0 +1,21 @@
+# EARTHWATCH design brief
+
+- **Design read:** A planetary observatory for curious students and decision-makers, designed to make Earth's interconnected systems feel tangible, calm, and scientifically legible.
+- **Concept spine:** The orbital observatory. Every section is a new instrument reading from one living planet.
+- **Delivery tier:** spectacle, with a cinematic orbital hero, layered depth, a responsive rotating globe, and interactive scientific instruments.
+- **Animation mode:** animated-website, user selected cinematic 3D journey. A generated scroll-scrub film could not be produced because the image/video generation service returned an out-of-credits error; the shipped experience therefore uses the supplied Earth image, CSS globe motion, and scroll-led chapter transitions rather than a fabricated video asset.
+- **Palette:** deep indigo-black `#080D1B`, midnight navy `#101B33`, glacial white `#E9F1F8`, muted slate `#8C9CB5`, single accent glacier teal `#7CC9C4`. The cool teal is muted and used sparingly against the indigo observatory environment.
+- **Typography:** Outfit display + IBM Plex Mono for telemetry and data labels.
+- **Hero architecture:** cinematic centered planet with oversized left-aligned headline, orbital data rail, compact search control.
+- **Section plan:** hero observatory; location intelligence instrument; hazard atlas; decade climate signal; biosphere migration archive; embedded science assistant.
+- **Section families:** cinematic image stage; asymmetric dashboard instrument; full-width hazard matrix; line-chart observatory; editorial wildlife plate; compact dialogue console.
+- **Signature components:** orbital coordinate reticle, layered planet with atmospheric halo, data glass panels, time-series graph with selected-point readout.
+- **Narrative spine:** journey / waypoints, one planet observed through atmosphere, land, ocean, hazards, and life.
+- **Second-read moment:** narrow vertical side-rail note with live telemetry.
+- **Journey shape:** single-shot was the planned default, but no generation credits were available. The working experience uses CSS orbital motion and scroll chapter transitions, with reduced-motion fallbacks.
+- **Journey:** 1) Blue marble, Earth as one connected system. 2) Atmosphere, temperature, humidity, wind and rainfall. 3) Tectonic and weather hazards, with active event context. 4) Ocean and climate signals across the decade. 5) Wildlife, migration and habitat pressure. 6) Ask the observatory, embedded science answers.
+- **World grammar:** deep indigo space, cobalt planet, silver-white clouds, subtle glacial-teal instrument marks, clean scientific typography, low-noise star field, no neon gradients or decorative sci-fi clutter.
+- **Mobile framing:** center-safe planet, stacked telemetry, horizontally scrollable hazard filters, touch-first location search and chat.
+- **Data integrity:** NASA POWER provides location-based historical atmospheric data when reachable; USGS provides recent earthquake observations; NASA EONET provides natural-event context where reachable. Embedded reference tables and explanations remain available offline. Values are labelled by source, date, units, and live/demo state. Hazard scores are screening indicators, not official forecasts.
+- **AI assistant:** an embedded, deterministic science knowledge assistant that searches the built-in Earth science knowledge base and summarizes current dashboard readings. It does not call an external generative AI service; this keeps the standalone site self-contained and avoids pretending that a local rules engine is a live LLM.
+- **CTA inventory:** `Explore the planet` (hero jump), `Analyze location` (search submit), `Open hazard atlas` (section jump), `Ask Earthwatch` (assistant submit).
